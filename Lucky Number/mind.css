@@ -1,0 +1,136 @@
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.header{
+    width:100%;
+    height: var(--headerHeight);
+    top:0;
+    box-shadow: 1px 1px 1px  rgb(199, 198, 198);
+    position:fixed;
+    background-color: #FFFFFF;
+   z-index: 3;
+}
+
+.header_nav-list{
+    display:flex;
+    justify-content: space-around;
+    padding-left: 0;
+    width:calc(100%-8%-8%);
+    
+}
+
+    
+
+.header_nav-list-item{
+    list-style: none;
+    font-weight: bold;
+    color: rgb(58, 57, 57);
+    line-height: 50px;
+    
+   
+ 
+}
+
+.header_nav-list-item:hover{
+    background: 
+    -webkit-linear-gradient(45deg,rgb(245, 133, 41),rgb(221, 42, 123),rgb(129, 52, 175));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;  
+     
+
+}
+
+
+.header_nav-list-item::after{
+    content:'';
+    display: block;
+    height: 2px;
+    width:0;
+    left:0;
+   
+   
+
+}
+
+
+.header_nav-list-item:hover::after{
+    background-image: linear-gradient(45deg,rgb(245, 133, 41),rgb(221, 42, 123),rgb(129, 52, 175));
+    width:100%;
+   
+    transition: .2s;
+    
+    
+    
+ 
+
+}
+
+#body{
+    display: block;
+}
+#luckyBox{
+    max-width:500px;
+    height:250px;
+   
+    margin: auto;
+    margin-top:10%;
+   
+    background-color: rgb(240, 238, 238);
+    
+    
+}
+.luckyBox-content{
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+.luckyBox-title{
+    background-image:linear-gradient(45deg,rgb(245, 133, 41),rgb(221, 42, 123),rgb(129, 52, 175));
+    width:inherit;
+    height:80px;
+    color: white;
+    text-align: center;
+
+}
+
+.luckyBox-title h1{
+    padding-top:20px;
+} 
+
+.luckyBox-input{
+    display: flex;
+    justify-content: center;
+   
+ 
+}
+
+
+
+
+input[type=text] {
+    width: 250px;
+    margin: 8px 0;
+    padding: 12px 20px;
+    margin-right:20px;
+    box-sizing: border-box;
+  }
+
+button{
+    width: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.result{
+   text-align: center;
+}
